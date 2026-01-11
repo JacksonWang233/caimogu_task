@@ -81,7 +81,7 @@ public class CaiMoGuH5Help {
      */
     public static PageModel getGameCommentPage(String gameId, String order, String type, String page) {
 
-        String url = " https://api.caimogu.cc/v2/game/commentList";
+        String url = "https://api.caimogu.cc/v2/game/commentList";
         Map<String, String> params = new HashMap<>();
         params.put("order", order); //newly 最先 hot choice ""
         params.put("page", page);
@@ -278,7 +278,7 @@ public class CaiMoGuH5Help {
      */
     public static PageModel getCommentPage(String detailId, String order, String page) {
 
-        String url = " https://api.caimogu.cc/v3/post/comment/list";
+        String url = "https://api.caimogu.cc/v3/post/comment/list";
         Map<String, String> params = new HashMap<>();
         params.put("order", order); //newly 最先 hot choice ""
         params.put("page", page);

@@ -5,7 +5,7 @@
 
 2. 配置三个仓库参数
    - `OWNER_REPO` 用户名/仓库名
-   - ~~`CAI_MO_GU_TOKEN`~~ 踩蘑菇的Token cmg_token
+   - ~~`CAI_MO_GU_TOKEN`~~ ~~踩蘑菇的Token cmg_token~~
    - `MY_GITHUB_API_TOKEN` githubapiToken 需要读写权限
    - `CMG_NAME` 踩蘑菇帐号名
    - `CMG_PASSWORD` 踩蘑菇密码
@@ -26,6 +26,9 @@
 - 2026-01-11
   - 基于h5接口的自动登录
   - 添加调用h5接口的代码
+  - 复刻js签名算法
+  - 流程调整
+  - 增加对游戏库评论评论
   - 最后一次更新
 
 ## 踩蘑菇接口(以下是该项目用到的所有接口和html)
@@ -50,3 +53,36 @@
   
 - https://www.caimogu.cc/post/act/comment
   - 评论帖子
+
+
+### h5接口
+
+- https://api.caimogu.cc/v2/game/commentList
+  - 游戏评论列表
+
+- https://api.caimogu.cc/v1/game/commentReply
+  - 评论游戏库评论
+  
+- https://api.caimogu.cc/v2/game/score
+  - 评论游戏
+
+- https://api.caimogu.cc/v3/post/comment/list
+  - 圈子评论列表
+
+- https://api.caimogu.cc/v2/game/list
+  - 游戏库列表
+
+- https://api.caimogu.cc/v3/circle/detail/list
+  - 圈子中的帖子列表
+
+- https://api.caimogu.cc/v3/post/reply
+  - 评价帖子
+
+- https://api.caimogu.cc/v3/my/reply/list
+  - 个人主页回复列表
+  
+-  https://api.caimogu.cc/v3/my/info
+  - 用户信息
+
+- https://api.caimogu.cc/v3/login/account
+  - 登录
