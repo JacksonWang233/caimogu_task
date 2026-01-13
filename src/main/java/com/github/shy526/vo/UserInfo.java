@@ -11,5 +11,5 @@ public class UserInfo {
 
     private Integer MaxGame = 3;
     private Integer MaxGameComment = 1;
-    private Integer MaxComment = 6;
+    private Integer MaxComment = 3;
 }
